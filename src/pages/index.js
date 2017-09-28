@@ -1,12 +1,7 @@
 import React from "react"
 import LogoBrestJS from "../../public/static/brestjs200.png"
 import LogoSlack from "../../public/static/Slack_Mark_Web.png"
-import {create} from 'apisauce'
-const headers = {}
-const api = create({
-baseURL:"https://slack.com/api/users.admin.invite",
-headers: headers
-});
+
 
 const slackUri = "https://slack.com/api"
 const tokenSlack = "xoxp-240389741204-241221196966-240801624533-11babdd970fe02fa89f898bc4eee407a"
@@ -25,9 +20,10 @@ class Invit extends React.Component {
 	}
 	handleSubmit = (e) =>{
 		e.preventDefault();
-		api.post('/users.admin.invite',{token:tokenSlack,email:this.state.email, channels:channel})
-		.then((response) => {
-			console.log(response);
+		fetch("https://slack.com/api/users.admin.invite?token=xoxp-240389741204-241221196966-240801624533-11babdd970fe02fa89f898bc4eee407a&pretty=1&email="+this.state.email,{
+			headers:{"Access-Control-Request-Headers":"*","Access-Control-Allow-Headers":"*","Content-Type":"application/json"}
+		}).then((res) => {
+			console.log(res)
 		})
 		
 	}
