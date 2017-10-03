@@ -1,22 +1,13 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
-      "component": "/Users/glenn/brestJS/brestjs/.cache/dev-404-page.js",
       "path": "/dev-404-page/",
-      "componentChunkName": "component---cache-dev-404-page-js",
-      "jsonName": "dev-404-page.json",
-      "internalComponentName": "ComponentDev404Page",
-      "updatedAt": 1507041405436,
-      "context": {},
-      "pluginCreator___NODE": "Plugin dev-404-page",
-      "pluginCreatorId": "Plugin dev-404-page",
-      "componentPath": "/Users/glenn/brestJS/brestjs/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "da48771c34c40cc276db50279be969e0",
+        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
         "owner": "internal-data-bridge"
       }
     },
@@ -251,16 +242,14 @@
     },
     "Site": {
       "siteMetadata": {},
-      "port": "8000",
-      "host": "localhost",
       "pathPrefix": "/public",
       "polyfill": true,
-      "buildTime": "2017-10-03T14:36:42.956Z",
+      "buildTime": "2017-10-03T14:46:49.635Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "68c444d1d5c7f6b647b009dd3827f46c",
+        "contentDigest": "04ee1a0782f7f6f104d1993f1f7d4d34",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -271,7 +260,7 @@
       "componentChunkName": "component---src-pages-index-js",
       "jsonName": "index.json",
       "internalComponentName": "ComponentIndex",
-      "updatedAt": 1507041494500,
+      "updatedAt": 1507042012703,
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
@@ -281,7 +270,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "1d969e2844c76d20346488c5bd6203c6",
+        "contentDigest": "abac3a1b10db57765130b9d36ce79411",
         "owner": "internal-data-bridge"
       }
     }
