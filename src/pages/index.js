@@ -1,7 +1,4 @@
 import React from "react"
-import LogoBrestJS from "../../public/static/brestjs200.png"
-import LogoSlack from "../../public/static/Slack_Mark_Web.png"
-
 
 const slackUri = "https://slack.com/api"
 const tokenSlack = "xoxp-240389741204-241221196966-240801624533-11babdd970fe02fa89f898bc4eee407a"
@@ -21,9 +18,14 @@ class Invit extends React.Component {
 	handleSubmit = (e) =>{
 		e.preventDefault();
 		fetch("https://slack.com/api/users.admin.invite?token=xoxp-240389741204-241221196966-240801624533-11babdd970fe02fa89f898bc4eee407a&pretty=1&email="+this.state.email,{
-			headers:{"Access-Control-Request-Headers":"*","Access-Control-Allow-Headers":"*","Content-Type":"application/json"}
+			headers:{
+			}
 		}).then((res) => {
 			console.log(res)
+			if(res.status === 200){
+				console.log("ça marche !!!")
+			
+			}
 		})
 		
 	}
@@ -32,8 +34,6 @@ class Invit extends React.Component {
 		return( 
 				<div style={{marginTop:"10%"}}>
 						<div style={{display:"flex", justifyContent:"center"}}>
-								<img src={LogoBrestJS} width="150px" height="150px"/>
-								<img src={LogoSlack} width="150px" height="150px"/>
 						</div>
 						<div>
 								<div style={{width:"25%",margin:"0px auto"}}>
